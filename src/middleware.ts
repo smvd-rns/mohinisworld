@@ -10,6 +10,11 @@ export function middleware(request: NextRequest) {
     return new NextResponse('Direct Access Not Allowed', { status: 403 });
   }
 
+  // Check for common bot attack paths (like the random /shop URLs)
+  if (request.nextUrl.pathname.startsWith('/shop')) {
+    return new NextResponse('Path Not Found', { status: 404 });
+  }
+
   return NextResponse.next();
 }
 
