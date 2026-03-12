@@ -13,7 +13,7 @@ export function middleware(request: NextRequest) {
   return NextResponse.next();
 }
 
-// Only run this on the main site pages
+// Run this on all paths to ensure total protection
 export const config = {
-  matcher: ['/', '/about', '/contact'],
+  matcher: '/:path*',
 };
