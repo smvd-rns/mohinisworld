@@ -18,7 +18,7 @@ const Testimonials = () => {
           {/* Circular Image */}
           <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shadow-md">
             <Image
-              src="/HH Giriraj Swami.png"
+              src="/hh-giriraj-swami.png"
               alt="HH Giriraj Swami"
               fill
               className="object-cover"

@@ -43,7 +43,7 @@ export default function ContactPage() {
               </h3>
               
               <div className="relative w-full h-32 sm:h-64 md:h-80 opacity-90">
-                 <Image src="/lotus 2.png" alt="Lotus Plant" fill className="object-contain object-left-top" />
+                <Image src="/lotus-2.png" alt="Lotus Plant" fill className="object-contain object-left-top" />
               </div>
             </div>
 
